@@ -24,6 +24,7 @@ return require('packer').startup(function(use)
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     --   use('nvim-treesitter/playground')
     use('theprimeagen/harpoon')
+vim.keymap.set("n", "<leader>gs", vim.cmd.Git)
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
 
@@ -47,5 +48,11 @@ return require('packer').startup(function(use)
         "windwp/nvim-autopairs",
         config = function() require("nvim-autopairs").setup {} end
     }
+
+    use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+        require("toggleterm").setup({
+            open_mapping = [[<c-\>]]
+        }) 
+    end}
 
 end)
