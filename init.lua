@@ -1,1 +1,3 @@
-require("erikconfig")
+-- init.lua
+
+require "lazy-config"
