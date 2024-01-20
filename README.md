@@ -1,5 +1,5 @@
 # nvim-config
-Configuration files for my personal nvim setup
+Configuration files for my nvim setup. Ty Nathan
 
 <div align="center">
     <img src="./nvim.png?raw=true" alt="DAC connections" width="100%" />
