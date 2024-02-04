@@ -63,10 +63,11 @@ end
 
 vim.g.mapleader = " "
 
-vim.keymap.set({'n', 'v', 'i'}, '<M-k>', '<Esc><C-w><Up>', {noremap = true})
-vim.keymap.set({'n', 'v', 'i'}, '<M-j>', '<Esc><C-w><Down>', {noremap = true})
-vim.keymap.set({'n', 'v', 'i'}, '<M-h>', '<Esc><C-w><Left>', {noremap = true})
-vim.keymap.set({'n', 'v', 'i'}, '<M-l>', '<Esc><C-w><Right>', {noremap = true})
+-- Window movement?
+vim.keymap.set({'n', 'v', 'i'}, '<C-k>', '<Esc><C-w><Up>', {noremap = true})
+vim.keymap.set({'n', 'v', 'i'}, '<C-j>', '<Esc><C-w><Down>', {noremap = true})
+vim.keymap.set({'n', 'v', 'i'}, '<C-h>', '<Esc><C-w><Left>', {noremap = true})
+vim.keymap.set({'n', 'v', 'i'}, '<C-l>', '<Esc><C-w><Right>', {noremap = true})
 
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })

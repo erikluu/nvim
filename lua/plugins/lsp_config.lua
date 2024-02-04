@@ -84,7 +84,7 @@ return {
                     "stylua",
                     "prettierd",
                     "isort",
-                    "black",
+                    "yapf",
                     -- diagnostics
                     "eslint_d",
                 },
